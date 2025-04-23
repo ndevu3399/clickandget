@@ -1,0 +1,134 @@
+/* custom.css */
+
+/* General body styling */
+body {
+    background-color: #f4f6f9; /* Light background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark text for better contrast */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #1e2a38; /* Dark background for a premium feel */
+    border-bottom: 2px solid #dfe6e9; /* Subtle bottom border for separation */
+  }
+  
+  .navbar-item {
+    color: #ecf0f1 !important; /* Light text */
+  }
+  
+  .navbar-item:hover {
+    color: #3498db !important; /* Hover color */
+  }
+  
+  /* Buttons styling */
+  .button.is-primary {
+    background-color: #3498db; /* Elegant blue */
+    color: white;
+    border-radius: 3px; /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.is-primary:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+  }
+  
+  /* Cart button */
+  .button.is-danger {
+    background-color: #e74c3c; /* Red for remove button */
+    color: white;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.is-danger:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Product Card */
+  .card {
+    background-color: #fff; /* White background for product card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight elevation on hover */
+  }
+  
+  /* Image inside product card */
+  .card .image img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Product title and price */
+  .card-content .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50; /* Dark text */
+  }
+  
+  .card-content .subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #16a085; /* Teal color for price */
+  }
+  
+  /* Category Filter Buttons */
+  .button.is-info {
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+  
+  .button.is-info:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Cart Item Display */
+  .box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cart items */
+    margin-bottom: 20px;
+  }
+  
+  .column img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Cart Item Title and Price */
+  .column p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #34495e; /* Dark gray text */
+  }
+  
+  .column .buttons button {
+    margin-right: 5px; /* Space between buttons */
+  }
+  
+  /* Cart Summary */
+  .title.is-4 {
+    color: #2c3e50; /* Dark text for totals */
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border-color: #ecf0f1; /* Light border for separator */
+  }
+  
