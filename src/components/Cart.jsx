@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 export default function Cart() {
   const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
   
-  // Calculate the total price of all items
+  
   const total = cart.reduce((sum, item) => sum + item.quantity * item.price, 0);
 
   if (cart.length === 0) return <p>Your cart is empty 😢</p>;

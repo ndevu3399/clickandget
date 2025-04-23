@@ -4,11 +4,11 @@ import { getCartFromStorage, saveCartToStorage } from '../utils/cartUtils.js';
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  // Ensure cart is always an array
+  
   const [cart, setCart] = useState(() => getCartFromStorage() || []);
 
   useEffect(() => {
-    // Only save to storage if cart changes
+    
     if (cart) {
       saveCartToStorage(cart);
     }

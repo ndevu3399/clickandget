@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import CartPage from './pages/CartPage.jsx'
 import Header from './components/Header.jsx'
-import NotFound from './pages/NotFound.jsx'  // Importing a NotFound page for 404
-import './custom.css';  // Import your custom styles
+import NotFound from './pages/NotFound.jsx'  
+import './custom.css';  
 
 
 export default function App() {
