@@ -38,10 +38,12 @@ export default function ProductList() {
   return (
     <>
       <CategoryFilter products={products} selected={category} setSelected={setCategory} />
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-centered">
         {filtered.map(product => (
-          <div className="column is-one-quarter" key={product.id}>
-            <ProductItem product={product} />
+          <div className="column is-one-quarter-desktop is-half-tablet" key={product.id}>
+            <div className="product-card-wrapper">
+              <ProductItem product={product} />
+            </div>
           </div>
         ))}
       </div>
