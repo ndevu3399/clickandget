@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext'
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 export default function CartItem({ item }) {
-  const { updateQuantity, removeFromCart } = useContext(CartContext)
+  const { updateQuantity, removeFromCart } = useContext(CartContext);
 
   return (
     <div className="box">
@@ -14,13 +14,30 @@ export default function CartItem({ item }) {
           <p className="title is-6">{item.title}</p>
           <p>${item.price}</p>
           <div className="buttons">
-            <button className="button is-small" onClick={() => updateQuantity(item.id, -1)}>-</button>
+            <button 
+              className="button is-small" 
+              onClick={() => updateQuantity(item.id, -1)} 
+              disabled={item.quantity <= 1} // Prevent quantity from going below 1
+            >
+              -
+            </button>
             <span className="mx-2">{item.quantity}</span>
-            <button className="button is-small" onClick={() => updateQuantity(item.id, 1)}>+</button>
-            <button className="button is-danger is-small ml-3" onClick={() => removeFromCart(item.id)}>Remove</button>
+            <button 
+              className="button is-small" 
+              onClick={() => updateQuantity(item.id, 1)}
+            >
+              +
+            </button>
+            <button 
+              className="button is-danger is-small ml-3" 
+              onClick={() => removeFromCart(item.id)}
+            >
+              Remove
+            </button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
+
