@@ -4,6 +4,8 @@ import Home from './pages/Home.jsx'
 import CartPage from './pages/CartPage.jsx'
 import Header from './components/Header.jsx'
 import NotFound from './pages/NotFound.jsx'  // Importing a NotFound page for 404
+import './custom.css';  // Import your custom styles
+
 
 export default function App() {
   return (
