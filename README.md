@@ -94,13 +94,6 @@ clickandget/
 
 We used **Bulma CSS** for rapid UI development, and enhanced the appearance with some custom CSS.
 
-### Google Fonts
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-```
-
----
 
 ## 🌐 Deployment
 
