@@ -117,16 +117,6 @@ Live site: [https://clickandget.vercel.app/](https://clickandget.vercel.app/)
 - [x] Filter products by category
 - [x] Persist the cart in localStorage for later
 
----
-
-## 🔮 Future Enhancements
-
-- Product detail pages
-- Checkout process
-- User login & authentication
-- Search functionality
-
----
 
 ## 👥 Contributors
 
